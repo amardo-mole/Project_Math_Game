@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.example.project_math_game.StartGame" >
+
+    <!-- Shows the main title for the program -->
+
+    <TextView
+        android:id="@+id/start_game_answer_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_answer_status" />
+
+    <!-- Shows the timer for the math game program -->
+
+    <TextView
+        android:id="@+id/game_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_game_score" />
+
+    <TextView
+        android:id="@+id/timer_for_game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_timer" />
+
+    <!-- Shows the math question for the math game program -->
+
+    <TextView
+        android:id="@+id/math_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_math_question"
+        android:textSize="25sp" />
+
+    <!-- Shows the answer input area for the program. -->
+
+    <EditText
+        android:id="@+id/answer_edit_text_area"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cursorVisible="false"
+        android:inputType="text"
+        android:digits="0123456789-."
+        android:focusable="false"
+        android:lines="1"
+        android:maxLength="9"
+        android:scrollHorizontally="false"
+        android:singleLine="true"
+        android:textSize="25sp" >
+    </EditText>
+
+    <!--
+    Shows the Buttons table layout for input (numpad), editing (BS and CC)
+    and submitting answer (enter) in the math game for the program
+    -->
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:stretchColumns="*" >
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/keypad_1"
+                android:text="@string/label_keypad_1" />
+
+            <Button
+                android:id="@+id/keypad_2"
+                android:text="@string/label_keypad_2" />
+
+            <Button
+                android:id="@+id/keypad_3"
+                android:text="@string/label_keypad_3" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/keypad_4"
+                android:text="@string/label_keypad_4" />
+
+            <Button
+                android:id="@+id/keypad_5"
+                android:text="@string/label_keypad_5" />
+
+            <Button
+                android:id="@+id/keypad_6"
+                android:text="@string/label_keypad_6" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/keypad_7"
+                android:text="@string/label_keypad_7" />
+
+            <Button
+                android:id="@+id/keypad_8"
+                android:text="@string/label_keypad_8" />
+
+            <Button
+                android:id="@+id/keypad_9"
+                android:text="@string/label_keypad_9" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/keypad_0"
+                android:text="@string/label_keypad_0" />
+
+            <Button
+                android:id="@+id/keypad_period"
+                android:text="@string/label_keypad_period" />
+
+            <Button
+                android:id="@+id/keypad_backspace"
+                android:text="@string/label_keypad_backspace" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/keypad_minus"
+                android:text="@string/label_keypad_minus" />
+
+            <Button
+                android:id="@+id/keypad_plus"
+                android:text="@string/label_keypad_plus" />
+
+            <Button
+                android:id="@+id/keypad_clear_completely"
+                android:text="@string/label_keypad_clear_completely" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/keypad_enter"
+                android:layout_span="2"
+                android:text="@string/label_keypad_enter" />
+
+                <Button
+        android:id="@+id/menuReturn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_main_menu_return" />
+
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

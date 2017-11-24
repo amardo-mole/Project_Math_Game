@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <!--
+    Results screen of:
+     - options question number.
+     - options question type.
+     - total questions
+     - correct answers
+	 - overall score
+	 This page will use button "submit to high score" to input a row with initials selected (3 letters only)
+    currently just displays the string "Android Math Game"
+    -->
+
+    <TextView
+        android:id="@+id/highScoreExplain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_GameplayScore"
+        android:textSize="40sp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/highScoreSaved"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="60sp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/options"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/label_initials_input_explain" />
+
+    <EditText
+        android:id="@+id/submitScoreInitialsEditTextBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:digits="0123456789qwertyuiopasdfghjklzxcvbnm"
+        android:hint="@string/label_hint_for_results"
+        android:maxLength="6"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/submitScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_submit_to_high_score" />
+
+    <Button
+        android:id="@+id/menuReturn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_main_menu_return" />
+
+</LinearLayout>

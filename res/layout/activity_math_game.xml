@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <!-- Shows the main title for the program -->
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="60dip"
+        android:text="@string/main_title"
+        android:textSize="25sp" />
+
+    <!-- Shows the start game button -->
+
+    <Button
+        android:id="@+id/start_game_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/start_game_label" />
+
+    <!-- Shows the high score button -->
+
+    <Button
+        android:id="@+id/high_score_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/high_score_label" />
+
+    <!-- Shows the options button -->
+
+    <Button
+        android:id="@+id/options_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/options_label" />
+
+    <!-- Shows the help button -->
+
+    <Button
+        android:id="@+id/help_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/help_label" />
+
+    <!-- Shows the exit button -->
+
+    <Button
+        android:id="@+id/exit_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/exit_label" />
+
+</LinearLayout>
