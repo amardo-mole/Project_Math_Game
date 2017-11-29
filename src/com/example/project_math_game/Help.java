@@ -14,7 +14,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 
 /**
- * The Class Help. Will show help to user on how to use this program via a TextView. 
+ * The Class Help. Will show help to user on how to use this program via a TextView.
  */
 public class Help extends Activity implements OnClickListener{
 
